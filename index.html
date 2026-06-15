@@ -36,10 +36,10 @@ body{font-family:Inter,sans-serif}
 
 </a>
 
-<button onclick="toggleMobileMenu()" class="md:hidden flex flex-col gap-1.5">
-<span id="line1" class="w-6 h-0.5 bg-[#022B63] transition-all duration-300"></span>
-<span id="line2" class="w-6 h-0.5 bg-[#022B63] transition-all duration-300"></span>
-<span id="line3" class="w-6 h-0.5 bg-[#022B63] transition-all duration-300"></span>
+<button onclick="toggleMobileMenu()" class="md:hidden p-2">
+<svg class="w-7 h-7 text-[#022B63]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+</svg>
 </button>
 
 <div class="hidden md:flex gap-6">
@@ -76,7 +76,7 @@ Order via WhatsApp
 
 </a>
 
-<div id="mobileMenu" class="hidden md:hidden bg-white border-t shadow-lg">
+<div id="mobileMenu" class="hidden md:hidden fixed top-[73px] left-0 right-0 bg-white border-t shadow-xl z-40">
 <div class="px-6 py-5 flex flex-col gap-5">
 <a href="#produk">Produk</a>
 <a href="#keunggulan">Keunggulan</a>
@@ -96,7 +96,7 @@ Order via WhatsApp
 <span class="bg-white/20 px-4 py-2 rounded-full">⭐ 500+ Pelanggan Puas</span>
 <h1 class="text-4xl md:text-6xl font-extrabold mt-6 leading-tight">Solusi Percetakan Modern untuk Bisnis & Kebutuhan Personal</h1>
 <p class="mt-6 text-lg">Banner, stiker, brosur, kartu nama, packaging, label produk, dan berbagai kebutuhan promosi lainnya dengan proses mudah, cepat, dan profesional.</p>
-<div class="flex gap-4 mt-8">
+<div class="flex flex-col sm:flex-row gap-4 mt-8">
 <a class="bg-[#0D64AC] hover:bg-[#08427A] px-6 py-4 rounded-2xl">Pesan Sekarang </a>
 <a class="border px-6 py-4 rounded-2xl" href="#produk">Lihat Produk</a>
 </div>
@@ -550,17 +550,17 @@ Tim kami siap membantu merekomendasikan produk terbaik sesuai kebutuhan, budget,
 
 <div class="mt-8 space-y-3">
 
-<div class="flex gap-3 text-white relative -top-14">
+<div class="flex gap-3 text-white">
     <span>✓</span>
     <span>Respon Cepat dalam Jam Kerja</span>
 </div>
 
-<div class="flex gap-3 text-white relative -top-12">
+<div class="flex gap-3 text-white">
     <span>✓</span>
     <span>Konsultasi Gratis Sebelum Orde</span>
 </div>
 
-<div class="flex gap-3 text-white relative -top-10">
+<div class="flex gap-3 text-white">
     <span>✓</span>
     <span>Didampingi Sampai Proses Produksi</span>
 </div>
@@ -933,14 +933,6 @@ Order via WhatsApp
 function toggleMobileMenu(){
  const menu=document.getElementById('mobileMenu');
  menu.classList.toggle('hidden');
-
- line1.classList.toggle('rotate-45');
- line1.classList.toggle('translate-y-2');
-
- line2.classList.toggle('opacity-0');
-
- line3.classList.toggle('-rotate-45');
- line3.classList.toggle('-translate-y-2');
 }
 
 function openProdukModal(){
