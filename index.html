@@ -35,6 +35,13 @@ body{font-family:Inter,sans-serif}
     </div>
 
 </a>
+
+<button onclick="toggleMobileMenu()" class="md:hidden flex flex-col gap-1.5">
+<span id="line1" class="w-6 h-0.5 bg-[#022B63] transition-all duration-300"></span>
+<span id="line2" class="w-6 h-0.5 bg-[#022B63] transition-all duration-300"></span>
+<span id="line3" class="w-6 h-0.5 bg-[#022B63] transition-all duration-300"></span>
+</button>
+
 <div class="hidden md:flex gap-6">
 
 <a href="#produk"
@@ -68,13 +75,26 @@ class="hidden md:inline-flex items-center bg-[#0D64AC] hover:bg-[#08427A] hover:
 Order via WhatsApp
 
 </a>
+
+<div id="mobileMenu" class="hidden md:hidden bg-white border-t shadow-lg">
+<div class="px-6 py-5 flex flex-col gap-5">
+<a href="#produk">Produk</a>
+<a href="#keunggulan">Keunggulan</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#faq">FAQ</a>
+<a href="https://wa.me/62895384266670" class="text-center bg-[#0D64AC] text-white py-3 rounded-xl font-semibold">
+💬 Order via WhatsApp
+</a>
+</div>
+</div>
 </nav>
 
+
 <section class="hero text-white">
-<div class="max-w-7xl mx-auto px-6 py-28 grid lg:grid-cols-2 gap-10 items-center">
+<div class="max-w-7xl mx-auto px-6 py-20 md:py-28 grid lg:grid-cols-2 gap-10 items-center">
 <div>
 <span class="bg-white/20 px-4 py-2 rounded-full">⭐ 500+ Pelanggan Puas</span>
-<h1 class="text-6xl font-extrabold mt-6 leading-tight">Solusi Percetakan Modern untuk Bisnis & Kebutuhan Personal</h1>
+<h1 class="text-4xl md:text-6xl font-extrabold mt-6 leading-tight">Solusi Percetakan Modern untuk Bisnis & Kebutuhan Personal</h1>
 <p class="mt-6 text-lg">Banner, stiker, brosur, kartu nama, packaging, label produk, dan berbagai kebutuhan promosi lainnya dengan proses mudah, cepat, dan profesional.</p>
 <div class="flex gap-4 mt-8">
 <a class="bg-[#0D64AC] hover:bg-[#08427A] px-6 py-4 rounded-2xl">Pesan Sekarang </a>
@@ -89,7 +109,7 @@ Order via WhatsApp
 <div class="text-center mb-14">
     <span class="bg-blue-50 text-[#0D64AC] px-4 py-2 rounded-full font-medium"> Dipercaya Ratusan Pelanggan </span>
 
-    <h2 class="text-4xl md:text-5xl font-extrabold mt-5">
+    <h2 class="text-4xl md:text-3xl md:text-5xl font-extrabold mt-5">
         Angka yang Membuktikan Kualitas Kami
     </h2>
 
@@ -107,7 +127,7 @@ Order via WhatsApp
             👥
         </div>
 
-        <h3 class="text-5xl font-extrabold text-amber-600">
+        <h3 class="text-3xl md:text-5xl font-extrabold text-amber-600">
             500+
         </h3>
 
@@ -127,7 +147,7 @@ Order via WhatsApp
             📦
         </div>
 
-        <h3 class="text-5xl font-extrabold text-blue-600">
+        <h3 class="text-3xl md:text-5xl font-extrabold text-blue-600">
             2.000+
         </h3>
 
@@ -147,7 +167,7 @@ Order via WhatsApp
             ⭐
         </div>
 
-        <h3 class="text-5xl font-extrabold text-green-600">
+        <h3 class="text-3xl md:text-5xl font-extrabold text-green-600">
             4.9
         </h3>
 
@@ -167,7 +187,7 @@ Order via WhatsApp
             🚀
         </div>
 
-        <h3 class="text-5xl font-extrabold text-purple-600">
+        <h3 class="text-3xl md:text-5xl font-extrabold text-purple-600">
             5+
         </h3>
 
@@ -190,7 +210,7 @@ Order via WhatsApp
     <div class="text-center mb-16">
 
         <span class="bg-blue-50 text-[#0D64AC] px-4 py-2 rounded-full font-medium"> Produk Favorit Pelanggan</span>
-        <h2 class="text-5xl font-extrabold mt-5">
+        <h2 class="text-3xl md:text-5xl font-extrabold mt-5">
             Produk Percetakan Terlaris
         </h2>
 
@@ -318,7 +338,7 @@ Lihat Semua Produk
 
 <span class="bg-blue-50 text-[#0D64AC] px-4 py-2 rounded-full font-medium"> Keunggulan Octora Printing </span>
 
-<h2 class="text-5xl font-extrabold mt-5">
+<h2 class="text-3xl md:text-5xl font-extrabold mt-5">
 Kenapa Pelanggan Memilih Kami?
 </h2>
 
@@ -409,7 +429,7 @@ Melayani pengiriman ke berbagai kota di Indonesia.
 Portfolio Kami
 </span>
 
-<h2 class="text-5xl font-extrabold mt-5">
+<h2 class="text-3xl md:text-5xl font-extrabold mt-5">
 Hasil Cetak yang Membantu Bisnis Tumbuh
 </h2>
 
@@ -518,7 +538,7 @@ Produksi buku, katalog produk, company profile, majalah, dan laporan tahunan den
 KONSULTASI GRATIS
 </span>
 
-<h2 class="text-5xl font-extrabold text-white mt-6 leading-tight">
+<h2 class="text-3xl md:text-5xl font-extrabold text-white mt-6 leading-tight">
 Masih Bingung Memilih Produk yang Tepat?
 </h2>
 
@@ -582,7 +602,7 @@ class="inline-flex items-center gap-3 bg-white text-[#0D64AC] px-8 py-4 rounded-
 FAQ
 </span>
 
-<h2 class="text-5xl font-extrabold mt-5">
+<h2 class="text-3xl md:text-5xl font-extrabold mt-5">
 Pertanyaan yang Sering Diajukan
 </h2>
 
@@ -909,6 +929,20 @@ Order via WhatsApp
 </a>
 </div></div></div></div></div></div>
 <script>
+
+function toggleMobileMenu(){
+ const menu=document.getElementById('mobileMenu');
+ menu.classList.toggle('hidden');
+
+ line1.classList.toggle('rotate-45');
+ line1.classList.toggle('translate-y-2');
+
+ line2.classList.toggle('opacity-0');
+
+ line3.classList.toggle('-rotate-45');
+ line3.classList.toggle('-translate-y-2');
+}
+
 function openProdukModal(){
  document.getElementById('allProductsModal').classList.remove('hidden');
 }
